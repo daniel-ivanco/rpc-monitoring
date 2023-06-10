@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  measured_at: MyString
+  datetime: MyString
+  latest_block_diff: MyString
+  bigint: MyString
+  up: MyString
+  boolean: MyString
+  rpc_endpoint: one
+
+two:
+  measured_at: MyString
+  datetime: MyString
+  latest_block_diff: MyString
+  bigint: MyString
+  up: MyString
+  boolean: MyString
+  rpc_endpoint: two
