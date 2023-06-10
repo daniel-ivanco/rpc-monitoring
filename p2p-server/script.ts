@@ -339,7 +339,7 @@ app.get('/api/mainnet/latestBlock', (req: Request, res: Response) => {
 //   res.json(newUser);
 // });
 
-const port = 3000;
+const port = 4000;
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
