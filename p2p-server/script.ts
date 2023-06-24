@@ -62,7 +62,7 @@ dpt.on('error', (err) => console.error(chalk.red(`DPT error: ${err}`)))
 //@ts-ignore
 const rlpx = new devp2p.RLPx(PRIVATE_KEY, {
   dpt,
-  maxPeers: 100,
+  maxPeers: 7,
   capabilities: [devp2p.ETH.eth66],
   common,
   remoteClientIdFilter: REMOTE_CLIENTID_FILTER,

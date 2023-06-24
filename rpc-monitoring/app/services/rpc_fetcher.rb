@@ -16,9 +16,13 @@ class RpcFetcher
   end
 
   def latest_rpc_block_number(rpc_url:)
-    client = Eth::Client.create rpc_url
-    response = client.eth_block_number
+    begin
+      client = Eth::Client.create rpc_url
+      response = client.eth_block_number
 
-    response['result'].hex
+      response['result'].hex
+    rescue
+      nil
+    end
   end
 end
